@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1mgVvaVBs0HnVrALLR8q5qyAT9w" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="" />
+      <created>1609915453870</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609915453870</updated>
+      <workItem from="1609915455303" duration="791000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="307" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609915914289">
+      <screen x="0" y="25" width="1920" height="1111" />
+    </state>
+    <state x="307" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.1111@0.25.1920.1111" timestamp="1609915914289" />
+    <state x="652" y="414" key="Github.CreateGistDialog" timestamp="1609916242267">
+      <screen x="0" y="25" width="1920" height="1111" />
+    </state>
+    <state x="652" y="414" key="Github.CreateGistDialog/0.25.1920.1111@0.25.1920.1111" timestamp="1609916242267" />
+    <state x="351" y="145" key="SettingsEditor" timestamp="1609915969876">
+      <screen x="0" y="25" width="1920" height="1111" />
+    </state>
+    <state x="351" y="145" key="SettingsEditor/0.25.1920.1111@0.25.1920.1111" timestamp="1609915969876" />
+    <state x="507" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1609916144997">
+      <screen x="0" y="25" width="1920" height="1111" />
+    </state>
+    <state x="507" y="238" width="670" height="676" key="search.everywhere.popup/0.25.1920.1111@0.25.1920.1111" timestamp="1609916144997" />
+  </component>
+</project>
