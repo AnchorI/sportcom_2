@@ -16,7 +16,10 @@ exports.categories_get = function (req, res) {
 exports.categories_create = function (req,res){
     let categories = new Categories(
         {
-            name: req.body.name
+            name: req.body.name,
+            position: req.body.position,
+            title: req.body.title,
+            description: req.body.description,
         }
     );
     categories.save(function (err){

@@ -43,7 +43,7 @@ app.use('/team', team);
 
 //<--------AddRolesToDB------->
 // This part of script for auto-create roles in new Project, mb in the future take out from app.js
-function initial() {
+function   initial() {
     Role.estimatedDocumentCount((err, count) => {
         if (!err && count === 0) {
             new Role({

@@ -16,7 +16,10 @@ exports.team_get = function (req, res) {
 exports.team_create = function (req,res){
     let team = new Team(
         {
-            name: req.body.name
+            name: req.body.name,
+            position: req.body.position,
+            title: req.body.title,
+            description: req.body.description,
         }
     );
     team.save(function (err){

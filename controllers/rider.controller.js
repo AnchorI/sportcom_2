@@ -16,7 +16,10 @@ exports.rider_get = function (req, res) {
 exports.rider_create = function (req,res){
     let rider = new Rider(
         {
-            name: req.body.name
+            name: req.body.name,
+            position: req.body.position,
+            title: req.body.title,
+            description: req.body.description,
         }
     );
     rider.save(function (err){
