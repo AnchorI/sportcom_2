@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="Change DB setting (Used QR code)">
+    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="Create CRUD for &quot;Riders, Categories, Team&quot;&#10;&#10;API in app.js">
+      <change afterPath="$PROJECT_DIR$/controllers/categories.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/rider.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/team.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/categories.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/rider.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/team.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/categories.route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/rider.route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/team.route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/product.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/product.views.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/product.views.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/views.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/views.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +21,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1mgVvaVBs0HnVrALLR8q5qyAT9w" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,8 +70,16 @@
       <workItem from="1609915455303" duration="791000" />
       <workItem from="1610203308314" duration="547000" />
       <workItem from="1610204922146" duration="605000" />
-      <workItem from="1610205539909" duration="2073000" />
+      <workItem from="1610205539909" duration="5139000" />
     </task>
+    <task id="LOCAL-00001" summary="Change DB setting (Used QR code)">
+      <created>1610207692638</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610207692638</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,6 +98,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change DB setting (Used QR code)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change DB setting (Used QR code)" />
+    <MESSAGE value="Create CRUD for &quot;Riders, Categories, Team&quot;" />
+    <MESSAGE value="Create CRUD for &quot;Riders, Categories, Team&quot;&#10;&#10;API in app.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create CRUD for &quot;Riders, Categories, Team&quot;&#10;&#10;API in app.js" />
   </component>
 </project>

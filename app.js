@@ -1,7 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require("cors");
-const product = require('./routes/product.route'); // Imports routes for the products
+//const cors = require("cors");
+const product = require('./routes/product.route');
+const categories = require("./routes/categories.route");
+const rider = require('./routes/rider.route');
+const team = require('./routes/team.route')// Imports routes for the products
 const views = require('./views/views');
 const app = express();
 const db = require("./models");
@@ -32,7 +35,10 @@ dbb.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use('/products', product);
-app.use('/',views)
+app.use('/',views);
+app.use('/categories', categories);
+app.use('/rider', rider);
+app.use('/team', team);
 
 
 //<--------AddRolesToDB------->
