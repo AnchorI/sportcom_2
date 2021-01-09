@@ -11,9 +11,9 @@ const mongoose = require('mongoose');
 
 //<------Cors-------->
 
-let corsOptions = {
-    origin: "http://localhost:8081" // Will changed on server ip:port
-};
+//let corsOptions = {
+//    origin: "http://localhost:8081" // Will changed on server ip:port
+//};
 
 //<------Cors-------->
 

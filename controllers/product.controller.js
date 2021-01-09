@@ -17,9 +17,7 @@ const Product = require('../models/product.model');
     exports.product_create = function (req,res){
         let product = new Product(
             {
-                name: req.body.name,
-                pd: req.body.pd,
-                check: req.body.check
+                name: req.body.name
             }
         );
 //<---------------------Just Test---------------->

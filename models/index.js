@@ -7,6 +7,7 @@ db.mongoose = mongoose;
 // Models used for create model on MongoDB
 db.user = require("./user.model");
 db.role = require("./role.model");
+db.sportCom2 = require("./product.model")
 
 db.ROLES = ["user", "admin", "moderator"];
 
