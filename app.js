@@ -6,6 +6,7 @@ const categories = require("./routes/categories.route");
 const rider = require('./routes/rider.route');
 const team = require('./routes/team.route')// Imports routes for the products
 const views = require('./views/views');
+const cart = require('./routes/cart.route');
 const app = express();
 const db = require("./models");
 const Role = db.role;
@@ -32,13 +33,16 @@ dbb.on('error', console.error.bind(console, 'MongoDB connection error:'));
 //<------MONGODB_CONNECT-------->
 
 // <-------app.use----->
+// Use Node.js body parsing middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+
 app.use('/products', product);
 app.use('/',views);
 app.use('/categories', categories);
 app.use('/rider', rider);
 app.use('/team', team);
+app.use('/cart', cart);
 
 
 //<--------AddRolesToDB------->

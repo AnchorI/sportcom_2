@@ -1,9 +1,6 @@
 const Product = require('../models/product.model');
 
 
-
-
-
 //Simple version, without validation or sanitation
     exports.product_get = function (req, res) {
         Product.find(req.params.id, function (err, product) {
@@ -39,7 +36,7 @@ const Product = require('../models/product.model');
     };
 //<------------Update-------------->
     exports.product_update = function (req, res) {
-        Product.findByIdAndUpdate(req.params.id, {$set: req.body}, function (err, product) {
+        Product.findByIdAndUpdate(req.params.id, {$set: req.body}, function (err) {
             if (err) return console.log(err);
             res.send('Product udpated.');
         });

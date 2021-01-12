@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="Create CRUD for &quot;Riders, Categories, Team&quot;&#10;&#10;API in app.js">
+      <change afterPath="$PROJECT_DIR$/client/src/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/cart.controllers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/cart.route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/categories.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/categories.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/rider.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/rider.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/team.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/team.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/product.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/product.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,9 @@
       <workItem from="1610203308314" duration="547000" />
       <workItem from="1610204922146" duration="605000" />
       <workItem from="1610205539909" duration="6821000" />
+      <workItem from="1610371844219" duration="595000" />
+      <workItem from="1610382789416" duration="348000" />
+      <workItem from="1610396142862" duration="2284000" />
     </task>
     <task id="LOCAL-00001" summary="Change DB setting (Used QR code)">
       <created>1610207692638</created>
@@ -96,6 +100,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change DB setting (Used QR code)" />
