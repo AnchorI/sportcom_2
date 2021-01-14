@@ -8,8 +8,8 @@ const team = require('./routes/team.route');// Imports routes for the products
 const cart = require('./routes/cart.route');
 const views = require('./views/views');
 const app = express();
-const db = require("./models");
-const Role = db.role;
+//const db = require("./models");
+//const Role = db.role;
 // Set up mongoose connection
 const mongoose = require('mongoose');
 
@@ -47,6 +47,7 @@ app.use('/cart', cart);
 
 //<--------AddRolesToDB------->
 // This part of script for auto-create roles in new Project, mb in the future take out from app.js
+/*
 function   initial() {
     Role.estimatedDocumentCount((err, count) => {
         if (!err && count === 0) {
@@ -81,15 +82,12 @@ function   initial() {
             });
         }
     });
-}
+}*/
 //<--------AddRolesToDB------->
-// routes
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
 //<---------Port-------->
-
 let port = 1234;
-
 app.listen(port, () => {
     console.log('Server is up and running on port number ' + port);
 });
