@@ -1,12 +1,13 @@
 const mongoose = require("mongoose");
 
 const Cart = mongoose.model(
-    "categories",
+    "cart",
     new mongoose.Schema({
-        name: {type: String, required: true, max: 40},
-        position: {type: Number},
+        name: {type: String, required: true, max: 50},
+        phone: {type: String, required: true, max: 20},
         title: {type: String},
-        description: {type: String}
+        description: {type: String},
+        _id: {type: Object}
     })
 );
 

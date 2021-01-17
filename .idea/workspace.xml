@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="Comment initial()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/cart.controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cart.controllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cart.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cart.model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,8 @@
       <workItem from="1610382789416" duration="348000" />
       <workItem from="1610396142862" duration="2284000" />
       <workItem from="1610462905515" duration="1039000" />
-      <workItem from="1610548132680" duration="1883000" />
+      <workItem from="1610548132680" duration="2375000" />
+      <workItem from="1610904190926" duration="496000" />
     </task>
     <task id="LOCAL-00001" summary="Change DB setting (Used QR code)">
       <created>1610207692638</created>
@@ -91,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610611631634</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Comment initial()">
+      <created>1610644335919</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610644335919</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

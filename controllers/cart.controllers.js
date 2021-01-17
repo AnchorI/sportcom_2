@@ -1,4 +1,4 @@
-const Cart = require('../models/product.model');
+const Cart = require('../models/cart.model');
 
 
 //Simple version, without validation or sanitation
@@ -14,7 +14,11 @@ exports.cart_get = function (req, res) {
 exports.cart_create = function (req,res){
     let product = new Cart(
         {
-            name: req.body.name
+            name: {type: String, required: true, max: 50},
+            phone: {type: String, required: true, max: 20},
+            title: {type: String},
+            description: {type: String},
+            _id: {type: Object}
         }
     );
 //<---------------------Just Test---------------->
