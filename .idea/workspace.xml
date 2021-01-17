@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="fix cart API">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="fix cart create">
+      <change beforePath="$PROJECT_DIR$/controllers/cart.controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cart.controllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/cart.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cart.model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +69,7 @@
       <workItem from="1610396142862" duration="2284000" />
       <workItem from="1610462905515" duration="1039000" />
       <workItem from="1610548132680" duration="2375000" />
-      <workItem from="1610904190926" duration="1773000" />
+      <workItem from="1610904190926" duration="2135000" />
     </task>
     <task id="LOCAL-00001" summary="Change DB setting (Used QR code)">
       <created>1610207692638</created>
@@ -107,7 +106,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610904844589</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix cart API 2">
+      <created>1610907385601</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610907385602</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix cart create">
+      <created>1610907481316</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610907481316</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +145,8 @@
     <MESSAGE value="Fix trouble with cart in Back" />
     <MESSAGE value="Comment initial()" />
     <MESSAGE value="fix cart API" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix cart API" />
+    <MESSAGE value="fix cart API 2" />
+    <MESSAGE value="fix cart create" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix cart create" />
   </component>
 </project>
