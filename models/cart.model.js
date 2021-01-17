@@ -8,11 +8,11 @@ const Cart = mongoose.model(
         title: {type: String},
         description: {type: String},
         data: [{
-                name: String,
-                img: String,
+                eename: String,
                 id: String,
-                }
-                ],
+                img: String,
+                }]
+
     })
 );
 
