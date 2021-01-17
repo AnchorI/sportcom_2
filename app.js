@@ -42,7 +42,7 @@ app.use('/',views);
 app.use('/categories', categories);
 app.use('/rider', rider);
 app.use('/team', team);
-app.use('/card', cart);
+app.use('/cart', cart);
 
 
 //<--------AddRolesToDB------->
