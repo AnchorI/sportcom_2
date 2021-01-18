@@ -17,16 +17,34 @@ const sortBy = (riders , filterBy, searchQuery) => {
     }
 
 };
-const filterRiders = (riders, searchQuery) =>
-    riders.filter(o => o.cat.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0);
+/*
+TO-DO
+* Сделать фильтр по категориям
+* Сделать загрузку после открытия категори
+* Прикрутить Чек Аут написанный егором
+* Добавить вывод команд внутри которых райдеры
+ */
 
-const searchRiders = (riders,filterBy,searchQuery) => {
-    return sortBy(filterRiders(riders,searchQuery));
+
+
+
+
+/*
+const filterRiders = (riders, searchQuery) =>
+{if(riders){
+    riders.filter(o => o.cat.toLowerCase().indexOf(searchQuery.toLowerCase()) >= 0);
+}
+
 };
+
+
+const searchRiders = (riders,searchQuery) => {
+    return sortBy(filterRiders(riders,searchQuery));
+}; */
 
 const mapStateToProps = ({ riders, filter }) => ({
 
-    riders: riders && searchRiders(riders.item, filter.filterBy, filter.searchQuery),
+    riders: riders /* && searchRiders(riders.item, filter.filterBy, filter.searchQuery)  */,
     isReady: riders.isReady
 });
 const mapDispatchToProps = dispatch => ({

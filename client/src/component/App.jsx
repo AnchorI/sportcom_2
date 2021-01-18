@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import WorkSpace from "../WorkSpace";
 import Filter from "../containers/Filter";
 import Rider from '../containers/card';
 
@@ -15,13 +14,16 @@ class App extends Component {
 
     render() {
          const {riders,  isReady,  setFilter} = this.props;
-
+         let item = [];
+         if(riders){
+             item = riders.item;
+         }
         return(
 
             <ul>
                 <Filter setFilter={setFilter}/>
-                {!isReady ? "Загрузка..." :
-                    riders.map(rider => (
+                {!isReady || !riders ? "Загрузка..." :
+                    item.map(rider => (
                         <Rider {...rider}></Rider>
                 ))}
 

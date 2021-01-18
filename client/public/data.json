@@ -2,7 +2,7 @@
    [
     {
       "_id": "5ff9dcc1078e0d3154a84aa4",
-      "name": "RiderCreateTest",
+      "name": "TeamOne",
       "img" : "#",
       "cat" : "BMX",
       "__v": 0
@@ -11,14 +11,14 @@
       "_id": "5ffa0cc044f83a35f41fa318",
       "name": "123",
       "img": "#",
-      "cat" : "BMX",
+      "cat" : "Skate",
       "__v": 0
     },
      {
        "_id": "5ffa0cc044f83a35f41fa318",
        "name": "СОСАТЬ МОЙ ХУЙ",
        "img": "#",
-       "cat" : "BMX",
+       "cat" : "Scooter",
        "__v": 0
      }
    ]
