@@ -1,0 +1,22 @@
+[{
+  "id" :"0",
+  "name" : "One",
+  "arcitcle" : "BMX Team",
+  "category" : "0",
+  "riderId" : ["0","2","1"]
+},
+  {
+    "id" :"1",
+    "name" : "Two",
+    "arcitcle" : "BMX Team",
+    "category" : "2",
+    "riderId" : ["0","2","1"]
+  },
+  {
+    "id" :"2",
+    "name" : "Три ебать",
+    "arcitcle" : "BMX Team",
+    "category" : "2",
+    "riderId" : ["0","2","3"]
+  }
+]
