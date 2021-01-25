@@ -7,7 +7,11 @@ const Cart = mongoose.model(
         phone: {type: String, max: 20},
         title: {type: String},
         description: {type: String},
-        data: {type: Object},
+        data: [{
+                eename: String,
+                id: String,
+                img: String,
+                }]
 
     })
 );

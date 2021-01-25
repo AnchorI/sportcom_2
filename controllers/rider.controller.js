@@ -6,11 +6,7 @@ exports.rider_get = function (req, res) {
     Rider.find(req.params.id, function (err, rider) {
         if (err) return console.log(err);
         console.log(rider);
-        res.set('Access-Control-Allow-Origin', '*');
-        // res.set('Access-Control-Allow-Methods', 'POST');
-        // res.set('Access-Control-Allow-Headers', 'x-requested-with');
-        // res.set('Access-Control-Allow-Credentials', 'false');
-
+        res.set('Access-Control-Allow-Origin', '*')
         res.send(rider);
     })
 };
@@ -21,7 +17,9 @@ exports.rider_create = function (req,res){
     let rider = new Rider(
         {
             name: req.body.name,
-
+            position: req.body.position,
+            title: req.body.title,
+            description: req.body.description,
         }
     );
     rider.save(function (err){

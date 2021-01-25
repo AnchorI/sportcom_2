@@ -17,8 +17,12 @@ exports.cart_create = function (req,res){
             name: req.body.name,
             phone: req.body.phone,
             title: req.body.title,
-            description: req.body.description,
-            data: req.body.data,
+            data: [{
+                eename :req.body.eename,
+                id : req.body.id,
+                img :req.body.img
+            }]
+
         }
     );
 //<---------------------Just Test---------------->

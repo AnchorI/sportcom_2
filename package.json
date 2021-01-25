@@ -1,6 +1,5 @@
 {
   "name": "authapp",
-  "proxy": "http://localhost:1234",
   "version": "1.0.0",
   "description": "mtk",
   "main": "app.js",
@@ -29,7 +28,7 @@
     "lodash": "^4.17.20",
     "mongodb": "^3.6.3",
     "mongoose": "^5.10.15",
-    "nodemon": "^2.0.7",
+    "nodemon": "^2.0.6",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6"
   }
