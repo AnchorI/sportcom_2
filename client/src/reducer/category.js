@@ -1,5 +1,5 @@
 const initialState = {
-    isReadyTeam : false,
+    isReadyCat : false,
     item: null,
 
 };
@@ -7,16 +7,16 @@ const initialState = {
 export default (state = initialState, action) => {
 
     switch (action.type) {
-        case 'SET_TEAM' :
+        case 'SET_CAT':
             return {
                 ...state,
                 item: action.payload,
-                isReadyTeam: true,
+                isReadyCat: true,
             };
-        case 'SET_IS_TEAM_READY' : {
+        case 'SET_IS_CAT_READY' : {
             return {
                 ...state,
-                isReadyTeam: action.payload
+                isReadyCat: action.payload
             };
         };
         default :

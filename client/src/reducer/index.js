@@ -1,8 +1,10 @@
 import team from './team'
+import category from "./category";
+import riders from "./riders";
+import {combineReducers} from "redux";
 
 export default combineReducers({
-    riders,
-    cart,
-    filter,
+    category,
     team,
+    riders,
 });

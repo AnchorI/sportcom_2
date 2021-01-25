@@ -1,22 +1,22 @@
 const initialState = {
-    isReadyTeam : false,
-    item: null,
-
+    item: [],
 };
 
 export default (state = initialState, action) => {
 
     switch (action.type) {
-        case 'SET_TEAM' :
+        case 'ADD_TO_CART' :
             return {
                 ...state,
-                item: action.payload,
-                isReadyTeam: true,
+                item: [
+                    ...state.item,
+                    action.payload
+                ],
             };
-        case 'SET_IS_TEAM_READY' : {
+        case 'REMOVE_FROM_CART' : {
             return {
                 ...state,
-                isReadyTeam: action.payload
+                item: state.item.filter(o => o._id != action.payload)
             };
         };
         default :
