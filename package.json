@@ -18,6 +18,7 @@
   "author": "AnchorI",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -27,6 +28,8 @@
     "lodash": "^4.17.20",
     "mongodb": "^3.6.3",
     "mongoose": "^5.10.15",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6"
   }
 }
