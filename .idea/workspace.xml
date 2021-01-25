@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="fix cart create 3">
+    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="fix cart create 3.1">
+      <change afterPath="$PROJECT_DIR$/client/src/checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/cart.controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cart.controllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/rider.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/rider.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cart.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cart.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/rider.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/rider.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +61,21 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src" />
+      <recent name="$PROJECT_DIR$/client/public" />
+      <recent name="$PROJECT_DIR$/client/src/component" />
       <recent name="C:\Users\AnchorI\Desktop\Develop\Git\sportcom_2\views" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="create.post.cart.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/client/js_scripts/create.post.cart.js" working-dir="$PROJECT_DIR$/client/js_scripts">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.create.post.cart.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,7 +94,9 @@
       <workItem from="1610396142862" duration="2284000" />
       <workItem from="1610462905515" duration="1039000" />
       <workItem from="1610548132680" duration="2375000" />
-      <workItem from="1610904190926" duration="3080000" />
+      <workItem from="1610904190926" duration="12151000" />
+      <workItem from="1611173114067" duration="4441000" />
+      <workItem from="1611595174558" duration="10090000" />
     </task>
     <task id="LOCAL-00001" summary="Change DB setting (Used QR code)">
       <created>1610207692638</created>
@@ -133,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610909666480</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix cart create 3.1">
+      <created>1610909714151</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610909714151</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +197,7 @@
     <MESSAGE value="fix cart create" />
     <MESSAGE value="fix cart create 2" />
     <MESSAGE value="fix cart create 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix cart create 3" />
+    <MESSAGE value="fix cart create 3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix cart create 3.1" />
   </component>
 </project>
