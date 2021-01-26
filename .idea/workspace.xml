@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="fix cart create 3.1">
-      <change afterPath="$PROJECT_DIR$/client/src/checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/data/cart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/public/data/checkout.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/data/riders.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/data/riders.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/data/team.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/data/team.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/checkoutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkoutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/cart.controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cart.controllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/rider.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/rider.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/cart.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cart.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/rider.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/rider.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">

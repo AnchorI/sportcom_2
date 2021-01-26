@@ -3,11 +3,12 @@ const mongoose = require("mongoose");
 const Cart = mongoose.model(
     "cart",
     new mongoose.Schema({
-        name: {type: String, max: 50},
-        phone: {type: String, max: 20},
-        title: {type: String},
-        description: {type: String},
-        data: {type: Object},
+        fio: {type: String},
+        Phone: {type: String},
+        Email: {type: String},
+        Array: [{name: String,img: String, _id: Object}]
+        // dataStart: {type: Date},
+        // dataEnd: {type: Date},
 
     })
 );

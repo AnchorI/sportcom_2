@@ -18,7 +18,7 @@ export default class PersonList extends React.Component {
         };
         console.log(user);
 
-        axios.post('http://localhost:1234/rider/create',user ,{
+        axios.post('checkout.json',user ,{
             method: 'POST',
             headers: {
                 'Access-Control-Allow-Origin': '*',
@@ -31,6 +31,7 @@ export default class PersonList extends React.Component {
                 console.log(res);
                 console.log(res.data);
             })
+
     }
 
     render() {
