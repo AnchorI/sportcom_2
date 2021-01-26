@@ -14,7 +14,7 @@ componentDidMount() {
 
 }
      Up   = (value) => {this.setState({ dataEnd : value}) };
-    Down = (value) => {this.setState({ dataStart : value})};
+     Down = (value) => {this.setState({ dataStart : value})};
 
 
 
@@ -23,7 +23,7 @@ componentDidMount() {
     const {dataStart,dataEnd} = this.state;
     const {items} = this.props;
     const {Loaded} = this.props;
-    console.log(items);
+    console.log(dataStart,  '          ',dataEnd);
     return(
         <div>
            <Link to="/"> <button onClick={Loaded.bind(null, true)}>Назад</button></Link>

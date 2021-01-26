@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from "axios";
 import Team from '../components/Team'
-
+import {Grid} from "semantic-ui-react";
 
 class BMX extends React.Component{
     componentDidMount() {
@@ -22,14 +22,15 @@ class BMX extends React.Component{
             team = [];
         }
         return(
-            <div>
+            <Grid columns={3} divided>
+                <Grid.Row>
                 {isReadyTeam ? "Идёт загрузка команд..." :
                 team.map(function e (cur,i,team){
                         if(team[i].category === "2"){
                            return <Team {...team[i]}></Team>
                         }
-                })}
-            </div>
+                })}</Grid.Row>
+            </Grid>
         );
     }
 }

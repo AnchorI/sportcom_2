@@ -3,6 +3,7 @@ import axios from "axios";
 import Category from './category';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Bmx from '../containers/BMX'
+import { Grid,Container } from 'semantic-ui-react'
 import CheckoutPage from "../containers/CheckoutPage";
 import MenuCart from "../containers/MenuCart";
 export default class App extends Component{
@@ -27,22 +28,26 @@ export default class App extends Component{
             category = [];
         }
         console.log(category);
-        if(isLoaded){return(
-           <div>
+        if(isLoaded){return(<div>
+           <Container>
                 <Router>
                 <Switch>
                 <Route exact path="/">
+                    <Grid><Grid.Row columns={3}>
                 {!isReadyCat ? "Загрузка..." : category.map(category =>(
                     <Category {...category}></Category>
-                ))}
+                ))}</Grid.Row></Grid>
                 </Route>
                 <Route  path="/BMX" component={Bmx}/>
                     <Route  path="/FMX" />
                     <Route  path="/SCOOTER" />
                 </Switch>
                 </Router>
-               <MenuCart Loaded={this.Loaded}/>
-            </div>
+
+            </Container>
+            <MenuCart Loaded={this.Loaded}/>
+        </div>
+
         );}else if(!isLoaded){
             return (<div>
                 <CheckoutPage Loaded={this.Loaded}/>
@@ -51,7 +56,3 @@ export default class App extends Component{
     }
 }
 
-const Children = (props) =>{
-    const {id} = this.props;
-    return(<div>{id}</div>)
-};

@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import * as ridersActions from '../actions/rider';
 import Rider from '../containers/cart';
+import {Grid, Image,Card} from "semantic-ui-react";
 import * as categoryActions from "../actions/Category";
 import App from "./App";
 
@@ -15,10 +16,12 @@ const Team =(props) => {
     }
     const FiltredRiders = riders.filter(e=>riderId.find(i=>i === e.id));
     return(
-        <div className='Team'>
+
+            <Grid.Column>
             <h2>{name}</h2>
-            <img src={img} alt={id}/>
-            <div>
+            <Image size='tiny' src={img}/>
+
+                <Card.Group>
             {
 
                 !isReady ? "Загрузка членов команды...":
@@ -28,8 +31,9 @@ const Team =(props) => {
 
                 ))
 
-            }</div>
-        </div>
+            }</Card.Group>
+            </Grid.Column>
+
     )
 
 
