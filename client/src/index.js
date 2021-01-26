@@ -6,7 +6,9 @@ import App from './containers/App';
 import {Provider} from 'react-redux';
 
 import createStore from "./store";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, Route,Switch } from 'react-router-dom';
+import MenuCart from "./containers/MenuCart";
+import CheckoutPage from "./containers/CheckoutPage";
 const store = createStore();
 
 
@@ -14,7 +16,8 @@ ReactDOM.render(
     <React.StrictMode>
       <Provider store={store}>
           <BrowserRouter>
-            <App />
+              <App />
+
           </BrowserRouter>
       </Provider>
     </React.StrictMode>,

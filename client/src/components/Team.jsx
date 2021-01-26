@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import * as ridersActions from '../actions/rider';
-import Rider from './rider'
+import Rider from '../containers/cart';
 import * as categoryActions from "../actions/Category";
 import App from "./App";
 
@@ -13,7 +13,7 @@ const Team =(props) => {
     if(riders === null){
         riders = [];
     }
-    console.log(riderId);
+    const FiltredRiders = riders.filter(e=>riderId.find(i=>i === e.id));
     return(
         <div className='Team'>
             <h2>{name}</h2>
@@ -22,12 +22,11 @@ const Team =(props) => {
             {
 
                 !isReady ? "Загрузка членов команды...":
-                riders.map(function e (cur,i,rider){
-                    console.log(rider[i].id === riderId[i]);
-                    if(rider[i].id === riderId[i]){
-                        return <Rider {...rider[i]}></Rider>
-                    }
-                })
+                FiltredRiders.map( rider => (
+
+                <Rider {...rider}></Rider>
+
+                ))
 
             }</div>
         </div>

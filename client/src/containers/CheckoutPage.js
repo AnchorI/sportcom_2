@@ -1,13 +1,16 @@
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import {bindActionCreators} from 'redux';
-import Rider from "../components/rider";
 import * as cartActions from '../actions/cart'
+import CheckoutPage from "../components/checkoutPage";
+
 
 
 
 const mapStateToProps = ({ cart }) => ({
-    addedCount : 0,
+    items:  cart.item,
+
 });
 const mapDispatchToProps = dispatch => ({...bindActionCreators(cartActions, dispatch)});
 
-export default connect(mapStateToProps, mapDispatchToProps)(Rider);
+export default connect(mapStateToProps, mapDispatchToProps)(CheckoutPage);
