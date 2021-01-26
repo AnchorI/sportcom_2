@@ -1,13 +1,14 @@
 const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
-//const cors = require("cors");
+const cors = require("cors");
 const product = require('./routes/product.route');
 const categories = require("./routes/categories.route");
 const rider = require('./routes/rider.route');
 const team = require('./routes/team.route');// Imports routes for the products
 const cart = require('./routes/cart.route');
 const views = require('./views/views');
-const app = express();
+
 //const db = require("./models");
 //const Role = db.role;
 // Set up mongoose connection
@@ -15,9 +16,7 @@ const mongoose = require('mongoose');
 
 //<------Cors-------->
 
-//let corsOptions = {
-//    origin: "http://localhost:8081" // Will changed on server ip:port
-//};
+app.use(cors({origin: '*'}));
 
 //<------Cors-------->
 
@@ -40,9 +39,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/products', product);
 app.use('/',views);
 app.use('/categories', categories);
-app.use('/rider', rider);
+app.use('/rider', rider,)
 app.use('/team', team);
 app.use('/cart', cart);
+
 
 
 //<--------AddRolesToDB------->
