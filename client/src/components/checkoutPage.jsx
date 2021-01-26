@@ -3,29 +3,36 @@ import Calendary from './calendary';
 import { format } from 'date-fns'
 import {enGB} from "date-fns/locale";
 import {Link} from 'react-router-dom';
+import Finish from './Finish';
 
 class CheckoutPage extends React.Component{
 state = {
-  dataEnd : null,
-    dataStart : null,
+  // dataEnd : null,
+  //   dataStart : null,
+    Loader : true
 };
 
 componentDidMount() {
 
 }
-     Up   = (value) => {this.setState({ dataEnd : value}) };
-     Down = (value) => {this.setState({ dataStart : value})};
+     // Up   = (value) => {this.setState({ dataEnd : value}) };
+     // Down = (value) => {this.setState({ dataStart : value})};
 
 
+
+    Loaders = (value) => this.setState({Loader : value});
 
     render() {
 
     const {dataStart,dataEnd} = this.state;
     const {items} = this.props;
     const {Loaded} = this.props;
-    console.log(dataStart,  '          ',dataEnd);
-    return(
-        <div>
+
+        let {Loader} = this.state;
+
+        const Loaders = this.Loaders;
+   if(Loader){ return(
+      <div>
            <Link to="/"> <button onClick={Loaded.bind(null, true)}>Назад</button></Link>
             <input type='text' placeholder='ФИО'/>
             <input type='Phone' placeholder="Номер телефона"/>
@@ -34,8 +41,12 @@ componentDidMount() {
             <input type='checkbox' value='WhatsApp'/>
             <input type='checkbox' value='Telegram'/>
             <div className="calendary-container"><Calendary Up={this.Up} Down={this.Down}/></div>
+            <button onClick={Loaders.bind(null, false)}>Оставить заявку</button>
         </div>
-        );
+        );} else if(!Loader){
+       return (<Finish/>);
+   }
+
     };
 };
 export default CheckoutPage;
