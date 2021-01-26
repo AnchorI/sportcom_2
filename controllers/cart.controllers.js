@@ -14,11 +14,14 @@ exports.cart_get = function (req, res) {
 exports.cart_create = function (req,res){
     let product = new Cart(
         {
-            name: req.body.name,
-            phone: req.body.phone,
-            title: req.body.title,
-            description: req.body.description,
-            data: req.body.data,
+            fio: req.body.fio,
+            Phone: req.body.Phone,
+            Email: req.body.Email,
+            Array:[
+                {name: req.body.name ,
+                img: req.body.img,
+                _id: req.body.id}]
+
         }
     );
 //<---------------------Just Test---------------->
