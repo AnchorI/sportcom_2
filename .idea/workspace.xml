@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="fix cart create 3.1">
-      <change afterPath="$PROJECT_DIR$/client/public/data/cart.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/public/data/checkout.json" afterDir="false" />
+    <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="Try to fake our checkout">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2021,_23_05_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2021__23_05__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/data/riders.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/data/riders.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/data/team.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/data/team.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/data/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/data/category.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/checkoutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkoutPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/cart.controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cart.controllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/cart.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cart.model.js" afterDir="false" />
     </list>
@@ -54,7 +50,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -96,6 +92,12 @@
       <workItem from="1610904190926" duration="12151000" />
       <workItem from="1611173114067" duration="4441000" />
       <workItem from="1611595174558" duration="10090000" />
+      <workItem from="1611836305136" duration="4498000" />
+      <workItem from="1611859330563" duration="1481000" />
+      <workItem from="1611860957019" duration="198000" />
+      <workItem from="1611861179229" duration="194000" />
+      <workItem from="1611861498436" duration="43000" />
+      <workItem from="1611861561199" duration="2981000" />
     </task>
     <task id="LOCAL-00001" summary="Change DB setting (Used QR code)">
       <created>1610207692638</created>
@@ -167,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610909714151</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Try to fake our checkout">
+      <created>1611635662417</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1611635662418</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +206,7 @@
     <MESSAGE value="fix cart create 2" />
     <MESSAGE value="fix cart create 3" />
     <MESSAGE value="fix cart create 3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix cart create 3.1" />
+    <MESSAGE value="Try to fake our checkout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Try to fake our checkout" />
   </component>
 </project>

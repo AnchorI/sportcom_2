@@ -12,19 +12,17 @@ exports.cart_get = function (req, res) {
 };
 //<----------Create Cart------------>
 exports.cart_create = function (req,res){
+    console.log(req.body);
     let product = new Cart(
         {
-            fio: req.body.fio,
-            Phone: req.body.Phone,
-            Email: req.body.Email,
-            Array:[
-                {name: req.body.name ,
-                img: req.body.img,
-                _id: req.body.id}]
+            name: req.body.name,
+            Phone: req.body.phone,
+            Email: req.body.email,
+            items: [req.body.items],
+            pidor: [req.body.pidor]
 
         }
     );
-//<---------------------Just Test---------------->
     product.save(function (err){
         if (err) {
             return console.log(err);
