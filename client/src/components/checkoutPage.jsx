@@ -5,7 +5,7 @@ import {enGB} from "date-fns/locale";
 import {Link} from 'react-router-dom';
 import Finish from './Finish';
 import axios from "axios";
-import items from "../containers/CheckoutPage";
+import items from "../containers/CategoryPage";
 
 class CheckoutPage extends React.Component{
 
@@ -63,9 +63,9 @@ class CheckoutPage extends React.Component{
                     <label>
                         Person Name:
                         <input type="text" name="name" onChange={this.handleChangeName} />
-                        HuyPhone:
+                        Phone:
                         <input type="number" name="phone" onChange={this.handleChangePhone}/>
-                        HuyEmail:
+                        Email:
                         <input type="email" name="email" onChange={this.handleChangeEmail}/>
                     </label>
                     <button type="submit">Add</button>

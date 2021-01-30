@@ -13,7 +13,7 @@ const MenuCart = ( {items,Loaded}) => {
             {items.map(rider => <CartComponent {...rider}/>)}
         </Grid.Row>
             </Grid>
-        <Link to='/CheckOut'><Button basic color='red' onClick={Loaded.bind(null , false)}>Checkout</Button></Link>
+        <Link to='/CheckOut'><Button basic color='red'>Checkout</Button></Link>
 
             </footer>
     );

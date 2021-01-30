@@ -5,7 +5,7 @@ import * as ridersActions from '../actions/rider';
 import Rider from '../containers/cart';
 import {Grid, Image,Card} from "semantic-ui-react";
 import * as categoryActions from "../actions/Category";
-import App from "./App";
+
 
 
 const Team =(props) => {

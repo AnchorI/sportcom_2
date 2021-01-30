@@ -1,11 +1,11 @@
-import BMX from '../components/BMX';
+
 import * as teamActions from '../actions/team';
 import * as ridersActions from '../actions/rider';
 
 
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
-
+import CategoryPage from "../components/CategoryPage";
 
 
 
@@ -22,4 +22,4 @@ const mapDispatchToProps = dispatch => ({
 
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(BMX);
+export default connect(mapStateToProps,mapDispatchToProps)(CategoryPage);

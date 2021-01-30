@@ -2,21 +2,21 @@
   "id" :"0",
   "name" : "Первая Команда",
   "arcitcle" : "BMX Team",
-  "category" : "0",
+  "category" : "BMX",
   "riderId" : [0,2,1]
 },
   {
     "id" :"1",
     "name" : "Вторая Команда",
     "arcitcle" : "BMX Team",
-    "category" : "2",
+    "category" : "SCOOTER",
     "riderId" : [0,2,1]
   },
   {
     "id" :"2",
     "name" : "Третья Команда",
     "arcitcle" : "BMX Team",
-    "category" : "2",
+    "category" : "FMX",
     "riderId" : [0,2,3]
   }
 ]
