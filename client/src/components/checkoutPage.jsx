@@ -14,9 +14,8 @@ class CheckoutPage extends React.Component{
         name: '',
         phone: '',
         email: '',
-        items: '',
-        pidor: '',
-    }
+        items: this.props,
+    };
 
     handleChangeName = event => {
         this.setState({ name: event.target.value });
@@ -30,20 +29,17 @@ class CheckoutPage extends React.Component{
 
     handleSubmit = event => {
         event.preventDefault();
-
-        // const pidor = this.state.items;
-        // console.log(pidor);
-        let pidor = ["her","pidor"];
-
+        const {items} = this.state;
         const user = {
             name: this.state.name,
             phone: this.state.phone,
             email: this.state.email,
-            pidor: pidor,
+            items: items.items,
+
         };
         console.log(user);
 
-        axios.post('http://localhost:1234/cart/create',{...user, ...pidor},{
+        axios.post('http://localhost:1234/cart/create',{...user, ...items},{
             method: 'POST',
             headers: {
                 'Access-Control-Allow-Origin': '*',
@@ -61,8 +57,6 @@ class CheckoutPage extends React.Component{
 
     render() {
 
-        const {items} = this.props;
-        console.log(items);
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
