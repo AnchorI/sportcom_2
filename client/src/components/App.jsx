@@ -32,7 +32,7 @@ export default class App extends Component{
                     <Category {...category}></Category>
                 ))}</Grid.Row></Grid>
             </Container>
-            <MenuCart/>
+
         </div>
 
         )

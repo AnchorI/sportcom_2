@@ -45,3 +45,14 @@ code {
 .calendary-container{
     max-width: 450px;
 }
+.Card_Container {
+    margin: 10px;
+    border: 10px solid green;
+}
+.Task_Container {
+    margin: 10px;
+    border: 10px solid green;
+}
+.Card_Container :hover {
+    cursor: pointer;
+}

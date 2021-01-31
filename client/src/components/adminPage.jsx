@@ -1,27 +1,30 @@
-import React from 'react';
+import React from "react";
 import axios from "axios";
+import TaskCard from "./taskCard";
 
-class AdminPage extends React.Component{
+class AdminPage extends React.Component {
 
-    state = {
-      isLoaded : null,
-        Items : []
-    };
+  componentDidMount() {
+    const {setTask} = this.props;
+    axios.get('/data/cart.json').then(({data})=>{
+      setTask(data);
+    })};
 
-    componentDidMount() {
-        axios.get(`localhost:1234/cart/get`)
-            .then(res => {
-                this.setState( {Items : res.data} );
-            })
+  render() {
+    const { isReadyAdmin} = this.props;
+    let {task} = this.props;
+
+    if(task == null){
+      task = [];
     }
-
-    render() {
-        return(
-            <div>
-1232
-            </div>
-        );
-    }
-
+    return (
+      <div>
+        {task.map((item) => (
+          <TaskCard {...item} />
+        ))}
+      </div>
+    );
+  }
 }
+
 export default AdminPage;
