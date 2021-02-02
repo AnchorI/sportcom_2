@@ -32,14 +32,18 @@ class CategoryPage extends React.Component{
 
         console.log(FiltredTeam);
         return(
+            <div className='container_cat'>
+                <div className='header'><h1>{id}</h1></div>
+
             <Grid columns={3} divided>
+
                 <Grid.Row>
                     {isReadyTeam ? "Идёт загрузка команд..." :
                         FiltredTeam.map(function e (cur,i,team){
                                 return <Team {...team[i]}></Team>;
 
                         })}</Grid.Row>
-            </Grid>
+            </Grid></div>
         );
     }
 }

@@ -21,14 +21,14 @@ ReactDOM.render(
 
               <Router history={history}>
               <Switch>
-                  <Route history={history}  exact path='/' component={App}/>
+                  <Route history={history}  exact path='/'><App/> </Route>
                   <Route history={history} path='/admin' component={AdminPage}/>
                   <Route history={history} path='/CheckOut' component={CheckoutPage}/>
                   <Route  path='/category/:id' component={CategoryPage}/>
-                  <Route  path='/admin' component={AdminPage}/>
-                  <Route  exact path='/admin/:id' component={Task}/>
+                  <Route exact path='/admin' component={AdminPage}/>
+
               </Switch>
-                  <MenuCart/>
+                  <footer><MenuCart/></footer>
               </Router>
 
       </Provider>

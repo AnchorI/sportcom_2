@@ -6,7 +6,8 @@ import {Button,Grid} from "semantic-ui-react";
 const MenuCart = ( {items,Loaded}) => {
 
     return(
-        <footer>
+        <div className='footer_container'>
+            <h1>Добавленные Райдеры:</h1>
             <Grid columns={3} divided>
                 <Grid.Row>
 
@@ -15,7 +16,7 @@ const MenuCart = ( {items,Loaded}) => {
             </Grid>
         <Link to='/CheckOut'><Button basic color='red'>Checkout</Button></Link>
 
-            </footer>
+            </div>
     );
 };
 export default MenuCart;

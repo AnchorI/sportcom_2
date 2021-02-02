@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 class taskCard extends React.Component {
@@ -7,13 +7,17 @@ class taskCard extends React.Component {
   const { name,  _id, Phone } = this.props;
 
   return (
-    <Link to={`${_id}`}>
+    <NavLink to={`${_id}`}>
     <div className="Card_Container">
+
+      <div className="Card_Header"><h4>{_id}</h4></div>
+      <div className="Card_Content">
+
       <h3>{name}</h3>
-      <h3>{_id}</h3>
-      <h2>{Phone}</h2>
+      <h4>{Phone}</h4>
+      </div>
     </div>
-    </Link>
+    </NavLink>
   );}
 };
 

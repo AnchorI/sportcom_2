@@ -47,12 +47,62 @@ code {
 }
 .Card_Container {
     margin: 10px;
-    border: 10px solid green;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    height: 140px;
 }
 .Task_Container {
     margin: 10px;
-    border: 10px solid green;
+    border: 5px solid green;
+
+    height: 540px;
 }
 .Card_Container :hover {
     cursor: pointer;
+
+}
+.AdminPage_Grid_Container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 380px);
+    grid-gap: 40px;
+}
+.Card_Header{
+    width: 100%;
+    background: #61dafb;
+    height: 40px;
+
+}
+.Card_Header h4{
+    text-align: center;
+
+}
+.Card_Content{
+ margin: 10px;
+}
+.Grid_Admin{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+.NavBar{
+    height: 100%;
+    background: gray;
+    text-decoration: none;
+}
+.NavBar img{
+    margin: 20px;
+    width: 32px;
+    height: 32px;
+}
+.container_cat{
+    height: 680px;
+
+}
+.footer_container{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    height: 100%;
+}
+.header{
+    text-align: center;
+    padding-bottom: 50px;
 }
