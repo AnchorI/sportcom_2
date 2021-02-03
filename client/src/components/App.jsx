@@ -1,10 +1,8 @@
 import React, {Component} from "react";
 import axios from "axios";
 import Category from './category';
-import {Route} from 'react-router-dom';
-import  CategoryPage from '../components/CategoryPage'
+import {NavLink} from 'react-router-dom';
 import { Grid,Container } from 'semantic-ui-react'
-import MenuCart from "../containers/MenuCart";
 export default class App extends Component{
     componentDidMount() {
         const {setCat} = this.props;
@@ -27,6 +25,7 @@ export default class App extends Component{
         console.log(category);
         return(<div>
            <Container>
+               <NavLink to='/admin'>Admin</NavLink>
                     <Grid><Grid.Row columns={3}>
                 {!isReadyCat ? "Загрузка..." : category.map(category =>(
                     <Category {...category}></Category>

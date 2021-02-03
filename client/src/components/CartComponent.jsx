@@ -1,9 +1,9 @@
 import React from 'react';
-import {Card, Button, Image} from "semantic-ui-react";
+import {Card, Button, Image,Grid} from "semantic-ui-react";
 
 const CartComponent = ({name, id, img, removeFromCart}) => {
     return(
-
+        <Grid.Column width={3}>
         <Card>
             <Card.Content>
                 <Image floated='right'
@@ -12,7 +12,7 @@ const CartComponent = ({name, id, img, removeFromCart}) => {
             <Button basic color='red' content='Удалить' onClick={removeFromCart.bind(this, id)}> Убрать из списка</Button>
             </Card.Content>
         </Card>
-
+        </Grid.Column>
     );
 };
 export default CartComponent;

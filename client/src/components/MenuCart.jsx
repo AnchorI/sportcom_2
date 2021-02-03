@@ -8,12 +8,11 @@ const MenuCart = ( {items,Loaded}) => {
     return(
         <div className='footer_container'>
             <h1>Добавленные Райдеры:</h1>
-            <Grid columns={3} divided>
-                <Grid.Row>
 
+            <Grid divided>
             {items.map(rider => <CartComponent {...rider}/>)}
-        </Grid.Row>
             </Grid>
+
         <Link to='/CheckOut'><Button basic color='red'>Checkout</Button></Link>
 
             </div>

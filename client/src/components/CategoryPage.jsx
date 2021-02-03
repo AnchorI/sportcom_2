@@ -2,6 +2,8 @@ import axios from "axios";
 import {Grid} from "semantic-ui-react";
 import Team from "./Team";
 import React from "react";
+import Back from "../img/back.svg";
+import {NavLink} from "react-router-dom";
 
 
 class CategoryPage extends React.Component{
@@ -33,6 +35,7 @@ class CategoryPage extends React.Component{
         console.log(FiltredTeam);
         return(
             <div className='container_cat'>
+                <NavLink  to='/'><img className='min-button' src={Back} alt=""/></NavLink>
                 <div className='header'><h1>{id}</h1></div>
 
             <Grid columns={3} divided>

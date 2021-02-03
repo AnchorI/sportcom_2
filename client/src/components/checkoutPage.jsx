@@ -1,8 +1,10 @@
 import React from 'react'
 import axios from "axios";
-
-import { Button, Input, } from 'semantic-ui-react'
+import Back from '../img/back.svg';
+import { Form, Input, TextArea, Button, Select } from 'semantic-ui-react'
 import  {DateRangePicker} from 'rsuite';
+import back from "../img/back.svg";
+import {NavLink} from "react-router-dom";
 class CheckoutPage extends React.Component{
 
 
@@ -62,27 +64,28 @@ class CheckoutPage extends React.Component{
     render() {
         const { active } = this.state;
         return (
-            <div>
+            <div className="Check_Container">
+                <NavLink  to='/'><img className='min-button' src={Back} alt=""/></NavLink>
+                <Form  onSubmit={this.handleSubmit}>
+                    <Form.Group  widths='equal' >
+                        <div className='Doneck'>
+                    <label htmlFor='name'> ФИО: </label><div className='form'>
 
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Person Name:
-                        <Input type="text" name="name" onChange={this.handleChangeName} />
-                        Phone:
-                        <Input type="number" name="phone" onChange={this.handleChangePhone}/>
-                        Email:
-                        <Input type="email" name="email" onChange={this.handleChangeEmail}/>
-                    </label>
+                        <Input placeholder="ФИО" type="text" name="name" onChange={this.handleChangeName} /></div>
+                        <label htmlFor="phone">Телефон:</label><div>
+                        <Input type="number"  placeholder="Телефон" name="phone" onChange={this.handleChangePhone}/></div>
+                       <label htmlFor="email">Email:</label><div>
+                        <Input type="email" placeholder="E-mail" name="email" onChange={this.handleChangeEmail}/></div>
+                        <DateRangePicker
+                            onChange={this.handleChangeCalendary}
+                            appearance="default"
+                            placeholder="Выберите дату"
+                            style={{ width: 280 }}
+                        />
+                         <Button type="submit">Add</Button></div>
+                    </Form.Group>
+                </Form>
 
-                    <Button type="submit">Add</Button>
-
-                </form>
-                <DateRangePicker
-                    onChange={this.handleChangeCalendary}
-                    appearance="default"
-                    placeholder="Default"
-                    style={{ width: 280 }}
-                />
 
             </div>
         )
