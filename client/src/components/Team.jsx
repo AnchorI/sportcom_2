@@ -14,7 +14,7 @@ const Team =(props) => {
     if(riders === null){
         riders = [];
     }
-    const FiltredRiders = riders.filter(e=>riderId.find(i=>i === e.id));
+    const FiltredRiders = riders.filter(e=>riderId.find(i=>i === e.userId));
     return(
 
             <Grid.Column>
