@@ -7,7 +7,7 @@ const Team = mongoose.model(
         teamId: {type: Number},
         acticle: {},
         category: {},
-        riderId: [],
+        riderId: [Number],
             img: {},
     })
 );
