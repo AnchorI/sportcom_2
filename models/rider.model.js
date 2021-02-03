@@ -5,7 +5,7 @@ const Rider = mongoose.model(
     new mongoose.Schema({
         name: {type: String, required: true, max: 40},
         img: {},
-        userId: {},
+        userId: {type: Number},
     })
 );
 
