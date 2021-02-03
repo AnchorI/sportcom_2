@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="Try to fake our checkout">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_01_2021,_21_56_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_01_2021,_22_25_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_01_2021__21_56__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_01_2021__22_25__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_01_2021__02_12__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_01_2021__02_12__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/data/checkout.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/CategoryPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/CategoryPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/adminPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/adminPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/categories.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/categories.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/rider.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/rider.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/team.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/team.controller.js" afterDir="false" />
@@ -107,10 +98,6 @@
       <workItem from="1611861179229" duration="194000" />
       <workItem from="1611861498436" duration="43000" />
       <workItem from="1611861561199" duration="2981000" />
-      <workItem from="1611928143892" duration="290000" />
-      <workItem from="1612017447618" duration="599000" />
-      <workItem from="1612121677643" duration="742000" />
-      <workItem from="1612346962159" duration="3690000" />
     </task>
     <task id="LOCAL-00001" summary="Change DB setting (Used QR code)">
       <created>1610207692638</created>

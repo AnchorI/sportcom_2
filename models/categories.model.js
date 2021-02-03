@@ -5,7 +5,7 @@ const Categories = mongoose.model(
     new mongoose.Schema({
         name: {type: String},
         img: {type: String},
-        category_id: {type: Number},
+        categoryId: {type: Number},
         description: {type: String}
     })
 );

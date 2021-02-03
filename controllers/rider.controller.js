@@ -22,7 +22,7 @@ exports.rider_create = function (req,res){
         {
             name: req.body.name,
             img: req.body.img,
-            user_id: req.body.user_id,
+            userId: req.body.userId,
 
         }
     );

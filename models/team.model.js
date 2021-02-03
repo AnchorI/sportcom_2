@@ -4,10 +4,11 @@ const Team = mongoose.model(
     "team",
     new mongoose.Schema({
         name: {type: String, required: true, max: 40},
-        team_id: {},
+        teamId: {},
         acticle: {},
         category: {},
         riderId: [],
+            img: {},
     })
 );
 

@@ -17,10 +17,11 @@ exports.team_create = function (req,res){
     let team = new Team(
         {
             name: req.body.name,
-            team_id: req.body.team_id,
+            teamId: req.body.teamId,
             acticle: req.body.article,
             category: req.body.category,
             riderId: [req.body.riderId],
+            img: req.body.img,
         }
     );
     team.save(function (err){
