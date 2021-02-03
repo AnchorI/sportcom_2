@@ -17,8 +17,8 @@ exports.categories_create = function (req,res){
     let categories = new Categories(
         {
             name: req.body.name,
-            position: req.body.position,
-            title: req.body.title,
+            img: req.body.img,
+            category_id: req.body.category_id,
             description: req.body.description,
         }
     );

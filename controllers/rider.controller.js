@@ -21,6 +21,8 @@ exports.rider_create = function (req,res){
     let rider = new Rider(
         {
             name: req.body.name,
+            img: req.body.img,
+            user_id: req.body.user_id,
 
         }
     );

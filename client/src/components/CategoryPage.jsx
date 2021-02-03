@@ -7,10 +7,10 @@ import React from "react";
 class CategoryPage extends React.Component{
     componentDidMount() {
         const {setTeam,setRiders} = this.props;
-        axios.get('/data/team.json').then(({data})=>{
+        axios.get('http://localhost:1234/team/get').then(({data})=>{
             setTeam(data);
         });
-        axios.get('/data/riders.json').then(({data})=>{
+        axios.get('http://localhost:1234/rider/get').then(({data})=>{
             setRiders(data);
         })
     }

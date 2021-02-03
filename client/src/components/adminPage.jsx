@@ -8,7 +8,7 @@ class AdminPage extends React.Component {
 
   componentDidMount() {
     const {setTask} = this.props;
-    axios.get('/data/cart.json').then(({data})=>{
+    axios.get('http://localhost:1234/cart/get').then(({data})=>{
       setTask(data);
     })};
 

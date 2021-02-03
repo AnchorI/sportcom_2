@@ -17,9 +17,10 @@ exports.team_create = function (req,res){
     let team = new Team(
         {
             name: req.body.name,
-            position: req.body.position,
-            title: req.body.title,
-            description: req.body.description,
+            team_id: req.body.team_id,
+            acticle: req.body.article,
+            category: req.body.category,
+            riderId: [req.body.riderId],
         }
     );
     team.save(function (err){

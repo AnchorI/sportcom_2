@@ -3,9 +3,9 @@ const mongoose = require("mongoose");
 const Categories = mongoose.model(
     "categories",
     new mongoose.Schema({
-        name: {type: String, required: true, max: 40},
-        position: {type: Number},
-        title: {type: String},
+        name: {type: String},
+        img: {type: String},
+        category_id: {type: Number},
         description: {type: String}
     })
 );
