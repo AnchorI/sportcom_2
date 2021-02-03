@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24a32287-3c81-4741-a9fb-9b3210754091" name="Default Changelist" comment="Try to fake our checkout">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2021,_23_05_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_20_01_2021__23_05__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/data/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/data/category.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/checkoutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/checkoutPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/cart.controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/cart.controllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/cart.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cart.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/categories.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/categories.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/rider.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/rider.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/team.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/team.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/categories.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/categories.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/rider.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/rider.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/team.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/team.model.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

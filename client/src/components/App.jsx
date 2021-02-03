@@ -8,7 +8,7 @@ import MenuCart from "../containers/MenuCart";
 export default class App extends Component{
     componentDidMount() {
         const {setCat} = this.props;
-        axios.get('/data/category.json').then(({data})=>{
+        axios.get('http://localhost:1234/categories/get').then(({data})=>{
             setCat(data);
         })
     }
