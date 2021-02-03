@@ -25,7 +25,7 @@ class Task extends React.Component{
                          <h3>Ифонрациия о заявке</h3>
                          {item.items[0].map((item)=>(<div>
                              <h4>Имя райдера: {item.name}</h4>
-                             <h5>Id райдера: {item.id}</h5>
+                             <h5>Id райдера: {item.user_id}</h5>
                          </div>))}
                      </div>
                 ))}

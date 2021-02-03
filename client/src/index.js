@@ -12,8 +12,11 @@ import CheckoutPage from "./containers/checkout";
 import MenuCart from "./containers/MenuCart";
 import CategoryPage from "./containers/CategoryPage";
 import Task from './containers/Task';
+import 'rsuite/dist/styles/rsuite-default.css';
+
 const store = createStore();
 const history = createBrowserHistory();
+
 
 ReactDOM.render(
     <React.StrictMode>

@@ -19,7 +19,7 @@ exports.cart_create = function (req,res){
             Phone: req.body.phone,
             Email: req.body.email,
             items: [req.body.items],
-            pidor: [req.body.pidor]
+            date: [req.body.date]
 
         }
     );

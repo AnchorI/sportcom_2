@@ -7,7 +7,7 @@ const Cart = mongoose.model(
         Phone: {type: String},
         Email: {type: String},
         items: [],
-        pidor: [],
+        date: [],
 
     })
 );

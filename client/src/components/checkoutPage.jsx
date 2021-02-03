@@ -1,12 +1,8 @@
 import React from 'react'
-import Calendary from './calendary';
-import { format } from 'date-fns'
-import {enGB} from "date-fns/locale";
-import {Link} from 'react-router-dom';
-import Finish from './Finish';
 import axios from "axios";
-import items from "../containers/CategoryPage";
 
+import { Button, Input, } from 'semantic-ui-react'
+import  {DateRangePicker} from 'rsuite';
 class CheckoutPage extends React.Component{
 
 
@@ -14,7 +10,9 @@ class CheckoutPage extends React.Component{
         name: '',
         phone: '',
         email: '',
+        date: '',
         items: this.props,
+
     };
 
     handleChangeName = event => {
@@ -26,6 +24,11 @@ class CheckoutPage extends React.Component{
     handleChangeEmail = event => {
         this.setState({ email: event.target.value });
     };
+    handleChangeCalendary = e =>{
+        this.setState({date : e} );
+        console.log(e);
+    };
+
 
     handleSubmit = event => {
         event.preventDefault();
@@ -34,6 +37,7 @@ class CheckoutPage extends React.Component{
             name: this.state.name,
             phone: this.state.phone,
             email: this.state.email,
+            date : this.state.date,
             items: items.items,
 
         };
@@ -53,23 +57,33 @@ class CheckoutPage extends React.Component{
                 console.log(res.data);
             })
 
-    }
+    };
 
     render() {
-
+        const { active } = this.state;
         return (
             <div>
+
                 <form onSubmit={this.handleSubmit}>
                     <label>
                         Person Name:
-                        <input type="text" name="name" onChange={this.handleChangeName} />
+                        <Input type="text" name="name" onChange={this.handleChangeName} />
                         Phone:
-                        <input type="number" name="phone" onChange={this.handleChangePhone}/>
+                        <Input type="number" name="phone" onChange={this.handleChangePhone}/>
                         Email:
-                        <input type="email" name="email" onChange={this.handleChangeEmail}/>
+                        <Input type="email" name="email" onChange={this.handleChangeEmail}/>
                     </label>
-                    <button type="submit">Add</button>
+
+                    <Button type="submit">Add</Button>
+
                 </form>
+                <DateRangePicker
+                    onChange={this.handleChangeCalendary}
+                    appearance="default"
+                    placeholder="Default"
+                    style={{ width: 280 }}
+                />
+
             </div>
         )
     }
