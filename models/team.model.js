@@ -4,7 +4,7 @@ const Team = mongoose.model(
     "team",
     new mongoose.Schema({
         name: {type: String, required: true, max: 40},
-        teamId: {},
+        teamId: {type: Number},
         acticle: {},
         category: {},
         riderId: [],
