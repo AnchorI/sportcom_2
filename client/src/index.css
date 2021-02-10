@@ -6,11 +6,30 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover,:after{
+    text-decoration: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
 .card {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    max-width: 300px;
@@ -98,9 +117,17 @@ code {
 
 }
 .footer_container{
+    margin: 0 auto;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    height: 100%;
+    background: url('./img/bg-footer.png') center;
+    background-repeat: no-repeat;
+    height: 225px;
+}
+
+.Check-Button{
+    float: right;
+    display: block;
+    margin-top: 8%;
 }
 .header{
     text-align: center;
@@ -119,4 +146,183 @@ code {
 .min-button{
     width: 32px;
     height: 32px;
+}
+
+.Main-Container{
+    width: 100%;
+    height: 975px;
+    background: center url("./img/bg.svg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Container{
+    margin: 0 auto;
+    width: 1200px;
+}
+.Header-Content{
+    padding: 15px;
+}
+.Header-Content h2{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 0.4px 10px  #ff567b;
+
+}
+
+.Content-Wrapper{
+    margin-left:  10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px) ;
+    grid-gap: 30px;
+}
+.Category-card{
+    height: 520px;
+    width: 100%;
+    border: #ffffff 4px solid;
+    background: rgba(255,181,162,0.45);
+}
+.Category-card h3 {
+
+}
+.Category-card img {
+    width: 100%;
+    height : 100%;
+    opacity: 0.8;
+    position: relative;
+    top: 0;
+}
+.Category-card h3{
+    position: relative;
+
+}
+
+.Link a {
+    text-decoration: none;
+    padding: 0 9px;
+}
+.Link {
+    margin-top: 10px;
+    background: url("./img/line2.png") no-repeat left ;
+
+}
+.Category-Name{
+    writing-mode: vertical-lr;
+    left: 230px;
+    top: -375px;
+    z-index: 5;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    text-orientation: mixed;
+    transition: 1s;
+
+}
+.Category-Name:hover{
+
+
+
+}
+.container_cat{
+    margin: 0;
+    display: grid;
+    height: 975px;
+    grid-template-columns: 2fr 10fr ;
+    padding-top: 50px;
+    grid-gap: 0 30px;
+    background: url("./img/catbg.png") no-repeat center;
+    background-size: cover;
+
+
+}
+.card-container{
+    width: 410px;
+    opacity: 1;
+    background: rgba(255,181,162,0.45);
+    padding: 15px;
+}
+
+
+.Rider-Cart{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    padding-bottom: 5px;
+
+
+}
+.rider-container{
+
+}
+.Rider-Cart h4{
+    padding-top: 8%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 64px;
+    padding-left: 10px;
+    background: rgba(0,0,0,0.7);
+}
+.card-container{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.button-rider{
+    color: white;
+
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 64px;
+    background: rgba(0,0,0,0.2);
+}
+.Rider-Img {
+
+    height: 64px;
+}
+
+
+.card-container-img{
+    width: 335px;
+    height: 100px;
+}
+.header h1{
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 41%;
+    padding-top: 150px;
+    font-size: 160px;
+    background: url("./img/line.png") no-repeat center;
+    background-size: contain;
+
+}
+.header {
+
+    height: 900px;
+    margin: 0;
+
+}
+
+
+.Taburetka{
+    display: block;
+    width: 130px;
+    opacity: 0.5;
+    margin: 0 auto;
+    padding-top: 200px;
+
+}
+.Taburetka a {
+    color: white;
+    margin: 0 auto;
+
+
+}
+.Taburetka a:hover{
+    text-decoration: none;
+    color:black;
 }

@@ -5,13 +5,17 @@ const Rider = (props) => {
     const {name, id, img, addToCart} = props;
 
     return(
-        <Card>
-            <Image floated='right'
-                   size='mini' src={img}/>
-            <Card.Header>{name}</Card.Header>
-            <Button basic color ='green' onClick={addToCart.bind(this, props)}>Добавить в список</Button>
+        <div className='rider-container'>
+            <div className='Rider-Cart'>
+                <div>
+                    <img className='Rider-Img' src={img}/></div>
 
-        </Card>
+                <div>
+                    <h4>{name}</h4>
+                </div><div><button className='button-rider' onClick={addToCart.bind(this, props)}>Добавить в список</button></div></div>
+
+
+        </div>
 
     );
 

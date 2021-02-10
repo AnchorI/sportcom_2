@@ -22,8 +22,11 @@ ReactDOM.render(
     <React.StrictMode>
       <Provider store={store}>
 
+
               <Router history={history}>
+
               <Switch>
+
                   <Route history={history}  exact path='/'><App/> </Route>
                   <Route history={history} path='/admin' component={AdminPage}/>
                   <Route history={history} path='/CheckOut' component={CheckoutPage}/>

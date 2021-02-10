@@ -23,8 +23,8 @@ class AdminPage extends React.Component {
         <div className='Grid_Admin'>
           <nav className='NavBar'>
 
-              <NavLink  to='/'><img src={back} alt=""/></NavLink>
-              <NavLink  to='/'>Все заявки</NavLink>
+              <NavLink  to='/admin'><img src={back} alt=""/></NavLink>
+              <NavLink  to='/admin'>Все заявки</NavLink>
 
           </nav>
           <Switch>

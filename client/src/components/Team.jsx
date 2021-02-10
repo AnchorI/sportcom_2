@@ -18,12 +18,11 @@ const Team =(props) => {
     return(
 
             <Grid.Column>
-            <h2>{name}</h2>
-            <Image size='tiny' src={img}/>
+            <div className='card-container'>
+                <h2>{name}</h2>
 
-                <Card.Group>
+                <div className="Card-Group">
             {
-
                 !isReady ? "Загрузка членов команды...":
                 FiltredRiders.map( rider => (
 
@@ -31,7 +30,8 @@ const Team =(props) => {
 
                 ))
 
-            }</Card.Group>
+            }</div>
+                </div>
             </Grid.Column>
 
     )

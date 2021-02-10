@@ -27,6 +27,10 @@ class Task extends React.Component{
                              <h4>Имя райдера: {item.name}</h4>
                              <h5>Id райдера: {item.userId}</h5>
                          </div>))}
+                         {item.date[0].map(o=>{
+                            const oo = new Date(o).toLocaleString();
+                             return(<p>Дата: {oo}</p>)
+                         })}
                      </div>
                 ))}
             </div>

@@ -2,7 +2,12 @@ import React, {Component} from "react";
 import axios from "axios";
 import Category from './category';
 import {NavLink} from 'react-router-dom';
-import { Grid,Container } from 'semantic-ui-react'
+import { Grid,Container } from 'semantic-ui-react';
+import Instagram from '../img/Instagram.png';
+import Facebook from '../img/Facebook.png';
+import Twitter from '../img/Twitter.png';
+import Whatsapp from '../img/WhatsApp.png';
+
 export default class App extends Component{
     componentDidMount() {
         const {setCat} = this.props;
@@ -22,19 +27,26 @@ export default class App extends Component{
         if(category == null){
             category = [];
         }
-        console.log(category);
-        return(<div>
-           <Container>
-               <NavLink to='/admin'>Admin</NavLink>
-                    <Grid><Grid.Row columns={3}>
+
+        return(
+            <div className='Main-Container'>
+                <NavLink to='/admin/'>Admin</NavLink>
+                <div className='Container'>
+                <div className='Header-Content'><h2>TextText</h2>
+                    <div className='Link'>
+                    <a href='https://www.instagram.com/'><img src={Instagram} alt="Inst"/></a>
+                    <a href=""><img src={Facebook} alt="Facebook"/></a>
+                   <a href=""><img src={Twitter} alt="Twitter"/></a>
+                    <a href=""><img src={Whatsapp} alt="WhatsApp"/></a></div>
+                </div>
+                <div className='Content-Wrapper'>
+
+
                 {!isReadyCat ? "Загрузка..." : category.map(category =>(
                     <Category {...category}></Category>
-                ))}</Grid.Row></Grid>
-            </Container>
-
-        </div>
-
-        )
+                ))}
+                </div></div>
+            </div>)
 
         }
 

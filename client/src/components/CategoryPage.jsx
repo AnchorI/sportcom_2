@@ -35,9 +35,10 @@ class CategoryPage extends React.Component{
         console.log(FiltredTeam);
         return(
             <div className='container_cat'>
+                <div className='child'>
                 <NavLink  to='/'><img className='min-button' src={Back} alt=""/></NavLink>
                 <div className='header'><h1>{id}</h1></div>
-
+                </div>
             <Grid columns={3} divided>
 
                 <Grid.Row>

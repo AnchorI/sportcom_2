@@ -1,17 +1,19 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import {Grid, Image} from "semantic-ui-react";
+
 
 const Category = (props) => {
+
+
     return(
-        <Grid.Column>
+        <div className='Category-card'>
         <NavLink to={`/category/${props.name}`}>
-            <Image size='medium'   src={props.img} alt={props.id}/>
-            <h3>{props.name}</h3>
 
+            <img src={props.img} alt=""/>
+            <h3 className='Category-Name'>{props.name}</h3>
 
-        </NavLink>
-        </Grid.Column>
+        </NavLink></div>
+
     )
 };
 
