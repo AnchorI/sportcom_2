@@ -65,25 +65,29 @@ class CheckoutPage extends React.Component{
         const { active } = this.state;
         return (
             <div className="Check_Container">
-                <NavLink  to='/'><img className='min-button' src={Back} alt=""/></NavLink>
+                <div className='Form_Header'>
+                    <h4>Оформление заявки</h4>
+                </div>
                 <Form  onSubmit={this.handleSubmit}>
-                    <Form.Group  widths='equal' >
-                        <div className='Doneck'>
-                    <label htmlFor='name'> ФИО: </label><div className='form'>
 
-                        <Input placeholder="ФИО" type="text" name="name" onChange={this.handleChangeName} /></div>
+                        <div className='Doneck'>
+                        <label htmlFor='name'> ФИО: </label><div className='form'>
+                        <input placeholder="ФИО" type="text" name="name" onChange={this.handleChangeName} /></div>
                         <label htmlFor="phone">Телефон:</label><div>
-                        <Input type="number"  placeholder="Телефон" name="phone" onChange={this.handleChangePhone}/></div>
+                        <input type="number"  placeholder="Телефон" name="phone" onChange={this.handleChangePhone}/></div>
                        <label htmlFor="email">Email:</label><div>
-                        <Input type="email" placeholder="E-mail" name="email" onChange={this.handleChangeEmail}/></div>
+                        <input type="email" placeholder="E-mail" name="email" onChange={this.handleChangeEmail}/></div>
+                            <label htmlFor="Data">Выберите дату мероприятея</label>
                         <DateRangePicker
                             onChange={this.handleChangeCalendary}
                             appearance="default"
                             placeholder="Выберите дату"
                             style={{ width: 280 }}
+                            className='Form_Date_Picker'
+                            name='Data'
                         />
                          <Button type="submit">Add</Button></div>
-                    </Form.Group>
+
                 </Form>
 
 

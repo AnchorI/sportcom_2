@@ -3,6 +3,7 @@ import axios from "axios";
 import Category from './category';
 import {NavLink} from 'react-router-dom';
 import { Grid,Container } from 'semantic-ui-react';
+
 import Instagram from '../img/Instagram.png';
 import Facebook from '../img/Facebook.png';
 import Twitter from '../img/Twitter.png';
@@ -46,6 +47,7 @@ export default class App extends Component{
                     <Category {...category}></Category>
                 ))}
                 </div></div>
+
             </div>)
 
         }

@@ -7,7 +7,7 @@ const Category = (props) => {
 
     return(
         <div className='Category-card'>
-        <NavLink to={`/category/${props.name}`}>
+        <NavLink to={`/category/${props.name}/`}>
 
             <img src={props.img} alt=""/>
             <h3 className='Category-Name'>{props.name}</h3>

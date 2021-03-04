@@ -39,15 +39,15 @@ class CategoryPage extends React.Component{
                 <NavLink  to='/'><img className='min-button' src={Back} alt=""/></NavLink>
                 <div className='header'><h1>{id}</h1></div>
                 </div>
-            <Grid columns={3} divided>
 
-                <Grid.Row>
+            <div className='Grid-Container'>
+
                     {isReadyTeam ? "Идёт загрузка команд..." :
                         FiltredTeam.map(function e (cur,i,team){
-                                return <Team {...team[i]}></Team>;
+                                return <div className='Grid-Children'><Team {...team[i]}></Team></div>;
 
-                        })}</Grid.Row>
-            </Grid></div>
+                        })}
+            </div></div>
         );
     }
 }
